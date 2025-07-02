@@ -1,0 +1,555 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LOTTERIADDAG";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Pretendard-Regular";
+  background-color: black;
+  color: white;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+.frontend .frontend_inner {
+  width: 1460px;
+  margin: auto;
+}
+.frontend .frontend_inner .header {
+  padding: 355px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.frontend .frontend_inner .header h4 {
+  color: #B1E5FF;
+  font-size: 50px;
+}
+.frontend .frontend_inner .header h1 {
+  font-size: 150px;
+}
+.frontend .frontend_inner .sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 80px;
+  color: #fff;
+  padding: 20px 10px;
+  z-index: 1000;
+}
+.frontend .frontend_inner .sidebar ul {
+  list-style-type: none;
+}
+.frontend .frontend_inner .sidebar ul li:nth-child(1) {
+  margin-bottom: 30px;
+}
+.frontend .frontend_inner .sidebar ul li:nth-child(2) {
+  margin-bottom: 30px;
+}
+.frontend .frontend_inner .sidebar ul li a {
+  font-family: "LOTTERIADDAG";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  color: #000;
+  font-size: 23px;
+}
+.frontend .frontend_inner .sidebar ul li a:hover {
+  background-color: #51c5ff;
+}
+.frontend .frontend_inner .profile h1 {
+  color: #B1E5FF;
+  font-size: 64px;
+  margin-bottom: 85px;
+}
+.frontend .frontend_inner .profile .profile_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_left .profile_left_name {
+  margin-bottom: 47px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_left .profile_left_name h2 {
+  font-size: 40px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_left .profile_left_name h2 span {
+  font-size: 24px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_left img {
+  margin-bottom: 20px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_left p {
+  font-size: 24px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_left p i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_left button {
+  margin-top: 10px;
+  width: 185px;
+  height: 37px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_middle {
+  margin-top: 97px;
+  width: 500px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_middle h5 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_middle p {
+  font-size: 22px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_middle .profile_middle_education {
+  margin-bottom: 70px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_middle .profile_middle_education p:nth-of-type(1) {
+  margin-bottom: 15px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_middle .profile_middle_experience {
+  margin-bottom: 70px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_middle p:nth-of-type(1) {
+  margin-bottom: 15px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right {
+  margin-top: 95px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right > p {
+  font-size: 26px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_container {
+  width: 300px;
+  margin: auto;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_one img {
+  cursor: pointer;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_one img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_two img {
+  cursor: pointer;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_two img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_three img {
+  cursor: pointer;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_three img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_four img {
+  cursor: pointer;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_right .profile_right_four img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.frontend .frontend_inner .profile .profile_inner .profile-right-wrapper {
+  position: relative; /* 기준 부모 역할 */
+}
+.frontend .frontend_inner .profile .profile_inner #profile-modal {
+  color: black;
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 373px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 50px 50px;
+  left: 0px;
+  margin-bottom: 10px;
+  z-index: 9999;
+}
+.frontend .frontend_inner .profile .profile_inner #profile-modal .profile-modal-content .profile-close-btn {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.frontend .frontend_inner .profile .profile_inner #profile-modal .profile-modal-content #profile-modal-info > h3 {
+  font-size: 25px;
+}
+.frontend .frontend_inner .profile .profile_inner #profile-modal .profile-modal-content #profile-modal-info > p {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 15px;
+}
+.frontend .frontend_inner .project {
+  margin-top: 308px;
+}
+.frontend .frontend_inner .project h1 {
+  color: #B1E5FF;
+  font-size: 64px;
+  margin-bottom: 85px;
+}
+.frontend .frontend_inner .project .project_inner .project_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 110px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one, .frontend .frontend_inner .project .project_inner .project_top .project_top_two, .frontend .frontend_inner .project .project_inner .project_top .project_top_three {
+  width: 450px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one h4, .frontend .frontend_inner .project .project_inner .project_top .project_top_two h4, .frontend .frontend_inner .project .project_inner .project_top .project_top_three h4 {
+  font-size: 32px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 30px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three img {
+  margin-bottom: 20px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_three_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_three_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_three_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_three_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_three_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_three_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_three_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_three_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_one_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_two_title, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_three_title {
+  margin-right: 20px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_three_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_three_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_three_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_three_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_three_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_three_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_three_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_three_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_one_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_two_title h5, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_three_title h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_text .project_top_three_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_text .project_top_three_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_text .project_top_three_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_text .project_top_three_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_text .project_top_three_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_text .project_top_three_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_text .project_top_three_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_text .project_top_three_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_one_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_two_explanation p, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_text .project_top_three_explanation p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_three_web a:nth-of-type(1) {
+  background-color: #B1E5FF;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_three_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_three_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_three_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_three_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_three_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_three_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_three_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_three_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_one_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_two_web a, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_three_web a {
+  display: inline-block;
+  width: 110px;
+  height: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_three_web a:hover {
+  background-color: #6acdff;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_three_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_three_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_three_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_three_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_three_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_three_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_three_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_three_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_one_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_two_web a:active, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_three_web a:active {
+  background-color: #00aaff;
+}
+.frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_one_link .project_top_three_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_two_link .project_top_three_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_one .project_top_three_link .project_top_three_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_one_link .project_top_three_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_two_link .project_top_three_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_two .project_top_three_link .project_top_three_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_one_link .project_top_three_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_two_link .project_top_three_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_one_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_two_logo img, .frontend .frontend_inner .project .project_inner .project_top .project_top_three .project_top_three_link .project_top_three_logo img {
+  margin-left: 10px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 110px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three {
+  width: 450px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one h4, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two h4, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three h4 {
+  font-size: 32px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 30px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three img {
+  margin-bottom: 20px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_three_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_three_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_three_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_three_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_three_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_three_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_three_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_three_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_one_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_two_title, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_three_title {
+  margin-right: 20px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_three_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_three_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_three_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_three_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_three_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_three_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_three_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_three_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_one_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_two_title h5, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_three_title h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_text .project_bottom_three_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_text .project_bottom_three_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_text .project_bottom_three_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_text .project_bottom_three_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_text .project_bottom_three_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_text .project_bottom_three_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_text .project_bottom_three_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_text .project_bottom_three_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_one_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_two_explanation p, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_text .project_bottom_three_explanation p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_three_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_one_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_two_web a:nth-of-type(1), .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_three_web a:nth-of-type(1) {
+  background-color: #B1E5FF;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_three_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_three_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_three_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_three_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_three_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_three_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_three_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_three_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_one_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_two_web a, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_three_web a {
+  display: inline-block;
+  width: 110px;
+  height: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_three_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_one_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_two_web a:hover, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_three_web a:hover {
+  background-color: #B1E5FF;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_three_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_three_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_three_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_three_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_three_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_three_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_three_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_three_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_one_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_two_web a:active, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_three_web a:active {
+  background-color: #51c5ff;
+}
+.frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_one_link .project_bottom_three_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_two_link .project_bottom_three_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one .project_bottom_three_link .project_bottom_three_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_one_link .project_bottom_three_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_two_link .project_bottom_three_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two .project_bottom_three_link .project_bottom_three_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_one_link .project_bottom_three_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_two_link .project_bottom_three_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_one_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_two_logo img, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three .project_bottom_three_link .project_bottom_three_logo img {
+  margin-left: 10px;
+}
+.frontend .dkdkdk a i {
+  position: relative;
+  left: 1835px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 50%;
+  background-color: #fff;
+  color: black;
+}
+.frontend footer {
+  height: 67px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+
+/* 모바일 */
+@media (max-width: 500px) {
+  .frontend .frontend_inner {
+    width: 100%;
+    margin: auto;
+  }
+  .frontend .frontend_inner .header h4 {
+    font-size: 35px;
+    font-weight: normal;
+  }
+  .frontend .frontend_inner .header h1 {
+    font-size: 100px;
+  }
+  .frontend .frontend_inner .sidebar {
+    display: none;
+  }
+  .frontend .frontend_inner .profile h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .frontend .frontend_inner .profile .profile_inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .frontend .frontend_inner .profile .profile_inner .profile_left {
+    margin: auto;
+  }
+  .frontend .frontend_inner .profile .profile_inner .profile_left .profile_left_name h2 {
+    display: none;
+  }
+  .frontend .frontend_inner .profile .profile_inner .profile_middle {
+    margin: 97px auto 0 auto;
+    width: 300px;
+  }
+  .frontend .frontend_inner .profile .profile_inner .profile_middle p {
+    font-size: 15px;
+  }
+  .frontend .frontend_inner .profile .profile_inner .profile_right p {
+    text-align: center;
+  }
+  .frontend .frontend_inner .profile .profile_inner #profile-modal {
+    left: 93px;
+  }
+  .frontend .frontend_inner .project h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+  .frontend .frontend_inner .project .project_inner .project_top {
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .frontend .frontend_inner .project .project_inner .project_top .project_top_one, .frontend .frontend_inner .project .project_inner .project_top .project_top_two, .frontend .frontend_inner .project .project_inner .project_top .project_top_three {
+    margin-bottom: 70px;
+  }
+  .frontend .frontend_inner .project .project_inner .project_bottom {
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_one, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_two, .frontend .frontend_inner .project .project_inner .project_bottom .project_bottom_three {
+    margin-bottom: 70px;
+  }
+  .frontend footer {
+    height: 67px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+  }
+}

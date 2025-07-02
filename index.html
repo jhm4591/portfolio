@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로트엔드 포트폴리오 장현민</title>
+  <!-- 최신 Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- 스타일 css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="frontend">
+    <div class="frontend_inner">
+      <header class="header" id="header">
+        <h4>Frontend Developer</h4>
+        <h1>장 현 민</h1>
+      </header>
+      <nav class="sidebar">
+        <ul>
+          <li>
+            <a href="#header">ㅈ</a>
+          </li>
+          <li>
+            <a href="#profile">ㅎ</a>
+          </li>
+          <li>
+            <a href="#project">ㅁ</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="profile" id="profile">
+        <h1>PROFILE</h1>
+        <div class="profile_inner">
+          <div class="profile_left">
+            <div class="profile_left_name">
+              <h2>장현민 <span>Jang Hyun Min</span></h2>
+            </div>
+            <img src="images/Group 92.png" alt="증명사진">
+            <p><i class="fa-solid fa-cake-candles" style="color: #ffffff;"></i> 2000.12.08</p>
+            <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> +82 010-5031-4591</p>
+            <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> jhm4591@naver.com</p>
+            <button onclick="downloadPDF()">이력서 다운로드 <i class="fa-solid fa-file-arrow-down"></i></button>
+          </div>
+          <div class="profile_middle">
+            <div class="profile_middle_education">
+              <h5>학력</h5>
+              <p>2019 충북고등학교 졸업</p>
+              <p>2023 대전과학기술대학교 광고홍보디자인과 졸업</p>
+            </div>
+            <div class="profile_middle_experience">
+              <h5>경험</h5>
+              <p>2023 중도일보 편집기자</p>
+              <p>2025 그린아트컴퓨터학원 대전둔산점</p>
+            </div>
+            <div class="profile_middle_About">
+              <h5>나에 대해</h5>
+              <p>
+                새로운 의견이나 피드백에 열려 있으며, 다양한 관점을 이해하려는 노력을 중요하게 생각합니다. 협업 과정에서 유연한 사고와 열린 커뮤니케이션으로 조화를 이룹니다.
+              </p>
+            </div>
+          </div>
+          <div class="profile_right">
+            <p>사용할 수 있는 언어·프로그램</p>
+            <div class="profile-right-wrapper">
+              <!-- 모달창 -->
+              <div id="profile-modal">
+                <div class="profile-modal-content">
+                  <span class="profile-close-btn"><i class="fa-regular fa-circle-xmark"></i></span>
+                  <div id="profile-modal-info"></div>
+                </div>
+              </div>
+              <div class="profile_right_container">
+                <div class="profile_right_one">
+                  <img src="images/Illustrator.png" alt="Illustrator">
+                  <img src="images/photoshop.png" alt="photoshop">
+                  <img src="images/figma.png" alt="figma">
+                </div>
+                <div class="profile_right_two">
+                  <img src="images/html.png" alt="html">
+                  <img src="images/css.png" alt="css">
+                  <img src="images/js.png" alt="js">
+                </div>
+                <div class="profile_right_three">
+                  <img src="images/slack.png" alt="slack">
+                  <img src="images/github.png" alt="github">
+                  <img src="images/react.png" alt="react">
+                </div>
+                <div class="profile_right_four">
+                  <img src="images/jQuery.png" alt="jQuery">
+                  <img src="images/scss.png" alt="scss">
+                  <img src="images/bootstrap.png" alt="bootstrap">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project" id="project">
+        <h1>PROJECT</h1>
+        <div class="project_inner">
+          <div class="project_top">
+            <div class="project_top_one">
+              <h4>FC서울</h4>
+              <img src="images/fcseoul.png" alt="fcseoul">
+              <div class="project_top_one_text">
+                <div class="project_top_one_title">
+                  <h5>작업시간</h5>
+                  <h5>작업유형</h5>
+                  <h5>설명</h5>
+                </div>
+                <div class="project_top_one_explanation">
+                  <p>80시간</p>
+                  <p>팀프로젝트</p>
+                  <p>레이아웃 디자인을뭐뭐해서</p>
+                </div>
+              </div>
+              <div class="project_top_one_link">
+                <div class="project_top_one_web">
+                  <a href="https://n8220112.github.io/camelcase-fcseoul/" target="_blank">DEMO</a>
+                  <a href="https://github.com/jhm4591/FCSEOUL" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <div class="project_top_one_logo">
+                  <img src="images/html.png" alt="html" style="height: 30px;">
+                  <img src="images/css.png" alt="css" style="height: 30px;">
+                  <img src="images/js.png" alt="js" style="height: 30px;">
+                  <img src="images/figma.png" alt="figma" style="height: 30px;">
+                </div>
+              </div>
+            </div>
+            <div class="project_top_two">
+              <h4>블랙컴뱃</h4>
+              <img src="images/blackcombat.png" alt="blackcombat">
+              <div class="project_top_two_text">
+                <div class="project_top_two_title">
+                  <h5>작업시간</h5>
+                  <h5>작업유형</h5>
+                  <h5>설명</h5>
+                </div>
+                <div class="project_top_two_explanation">
+                  <p>120시간</p>
+                  <p>팀프로젝트</p>
+                  <p>레이아웃 디자인을뭐뭐해서</p>
+                </div>
+              </div>
+              <div class="project_top_two_link">
+                <div class="project_top_two_web">
+                  <a href="https://seeeeungjun.github.io/black-combat/" target="_blank">DEMO</a>
+                  <a href="https://seeeeungjun.github.io/black-combat/" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <div class="project_top_two_logo">
+                  <img src="images/html.png" alt="html" style="height: 30px;">
+                  <img src="images/css.png" alt="css" style="height: 30px;">
+                  <img src="images/js.png" alt="js" style="height: 30px;">
+                  <img src="images/figma.png" alt="figma" style="height: 30px;">
+                </div>
+              </div>
+            </div>
+            <div class="project_top_three">
+              <h4>FC서울</h4>
+              <img src="images/fcseoul.png" alt="fcseoul">
+              <div class="project_top_three_text">
+                <div class="project_top_three_title">
+                  <h5>작업시간</h5>
+                  <h5>작업유형</h5>
+                  <h5>설명</h5>
+                </div>
+                <div class="project_top_three_explanation">
+                  <p>120시간</p>
+                  <p>팀프로젝트</p>
+                  <p>레이아웃 디자인을뭐뭐해서</p>
+                </div>
+              </div>
+              <div class="project_top_three_link">
+                <div class="project_top_three_web">
+                  <a href="https://n8220112.github.io/camelcase-fcseoul/" target="_blank">DEMO</a>
+                  <a href="https://github.com/jhm4591/FCSEOUL" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <div class="project_top_three_logo">
+                  <img src="images/html.png" alt="html" style="height: 30px;">
+                  <img src="images/css.png" alt="css" style="height: 30px;">
+                  <img src="images/js.png" alt="js" style="height: 30px;">
+                  <img src="images/figma.png" alt="figma" style="height: 30px;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_bottom">
+            <div class="project_bottom_one">
+              <h4>FC서울</h4>
+              <img src="images/fcseoul.png" alt="fcseoul">
+              <div class="project_bottom_one_text">
+                <div class="project_bottom_one_title">
+                  <h5>작업시간</h5>
+                  <h5>작업유형</h5>
+                  <h5>설명</h5>
+                </div>
+                <div class="project_bottom_one_explanation">
+                  <p>120시간</p>
+                  <p>팀프로젝트</p>
+                  <p>레이아웃 디자인을뭐뭐해서</p>
+                </div>
+              </div>
+              <div class="project_bottom_one_link">
+                <div class="project_bottom_one_web">
+                  <a href="https://n8220112.github.io/camelcase-fcseoul/" target="_blank">DEMO</a>
+                  <a href="https://github.com/jhm4591/FCSEOUL" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <div class="project_bottom_one_logo">
+                  <img src="images/html.png" alt="html" style="height: 30px;">
+                  <img src="images/css.png" alt="css" style="height: 30px;">
+                  <img src="images/js.png" alt="js" style="height: 30px;">
+                  <img src="images/figma.png" alt="figma" style="height: 30px;">
+                </div>
+              </div>
+            </div>
+            <div class="project_bottom_two">
+              <h4>FC서울</h4>
+              <img src="images/fcseoul.png" alt="fcseoul">
+              <div class="project_bottom_two_text">
+                <div class="project_bottom_two_title">
+                  <h5>작업시간</h5>
+                  <h5>작업유형</h5>
+                  <h5>설명</h5>
+                </div>
+                <div class="project_bottom_two_explanation">
+                  <p>120시간</p>
+                  <p>팀프로젝트</p>
+                  <p>레이아웃 디자인을뭐뭐해서</p>
+                </div>
+              </div>
+              <div class="project_bottom_two_link">
+                <div class="project_bottom_two_web">
+                  <a href="https://n8220112.github.io/camelcase-fcseoul/" target="_blank">DEMO</a>
+                  <a href="https://github.com/jhm4591/FCSEOUL" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <div class="project_bottom_two_logo">
+                  <img src="images/html.png" alt="html" style="height: 30px;">
+                  <img src="images/css.png" alt="css" style="height: 30px;">
+                  <img src="images/js.png" alt="js" style="height: 30px;">
+                  <img src="images/figma.png" alt="figma" style="height: 30px;">
+                </div>
+              </div>
+            </div>
+            <div class="project_bottom_three">
+              <h4>FC서울</h4>
+              <img src="images/fcseoul.png" alt="fcseoul">
+              <div class="project_bottom_three_text">
+                <div class="project_bottom_three_title">
+                  <h5>작업시간</h5>
+                  <h5>작업유형</h5>
+                  <h5>설명</h5>
+                </div>
+                <div class="project_bottom_three_explanation">
+                  <p>120시간</p>
+                  <p>팀프로젝트</p>
+                  <p>레이아웃 디자인을뭐뭐해서</p>
+                </div>
+              </div>
+              <div class="project_bottom_three_link">
+                <div class="project_bottom_three_web">
+                  <a href="https://n8220112.github.io/camelcase-fcseoul/" target="_blank">DEMO</a>
+                  <a href="https://github.com/jhm4591/FCSEOUL" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <div class="project_bottom_three_logo">
+                  <img src="images/html.png" alt="html" style="height: 30px;">
+                  <img src="images/css.png" alt="css" style="height: 30px;">
+                  <img src="images/js.png" alt="js" style="height: 30px;">
+                  <img src="images/figma.png" alt="figma" style="height: 30px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>    
+    <div class="dkdkdk">
+      <a href="#">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+
+    <footer>
+      &copy; 2025. 장현민 All rights reserved
+    </footer>
+  </div>
+  <script>
+    const modal = document.getElementById("profile-modal");
+    const modalInfo = document.getElementById("profile-modal-info");
+    const closeBtn = document.querySelector(".profile-close-btn");
+
+    document.querySelectorAll(".profile_right_container img").forEach(img => {
+      img.addEventListener("click", () => {
+        const altText = img.alt;
+        modalInfo.innerHTML = `
+          <h3>${altText}</h3>
+          <p>${getToolDescription(altText)}</p>
+        `;
+        modal.style.display = "block";
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    function getToolDescription(tool) {
+      const descriptions = {
+        Illustrator: "다양한 디자인 요소 제작 및 아이콘, 로고 디자인에 활용 가능합니다.",
+        photoshop: "이미지 편집, 배너 디자인, 간단한 웹용 그래픽 작업이 가능합니다.",
+        figma: "와이어프레임 제작, UI 디자인 제작, 프로토타입 제작, 디자인 시스템 관리, 개발자와 협업이 가능합니다.",
+        html: "HTML5의 다양한 요소와 시맨틱 태그를 활용해 반응형 웹 페이지의 마크업을 직접 구성할 수 있으며, 접근성과 웹 표준을 고려한 구조 설계가 가능합니다.",
+        css: "실제 웹페이지 스타일 입히는 것에 익숙하고, 실무에서 자주 쓰는 CSS 속성은 대부분 사용 가능합니다.",
+        js: "기본 문법 및 DOM 조작, 이벤트 처리에 익숙하며, 비동기 통신(AJAX/fetch) 사용 경험이 있습니다.",
+        slack: "팀 협업 및 커뮤니케이션 툴로 능숙히 사용하였습니다.",
+        github: "버전 관리 및 소스코드 저장소 플랫폼입니다.",
+        react: "컴포넌트 기반 구조 이해 및 구현 가능, 상태 관리(useState, useEffect 등) 경험이 있습니다.",
+        jQuery: "DOM 제어, 이벤트 처리, 애니메이션 효과 등 기본 기능 활용 가능합니다.",
+        scss: "변수, 믹스인, 중첩 등 활용해 유지보수성 높은 스타일링이 가능합니다.",
+        bootstrap: "그리드 시스템과 UI 컴포넌트를 활용한 빠른 레이아웃 구현 가능, 반응형 설계 경험이 있습니다."
+      };
+      return descriptions[tool] || "설명이 준비되지 않았습니다.";
+    }
+
+    function downloadPDF() {
+      const link = document.createElement('a');
+      link.href = 'portfolio.pdf'; // 같은 저장소에 있는 PDF
+      link.download = 'portfolio.pdf';
+      link.click();
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LOTTERIADDAG';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{scroll-behavior: smooth;}
+body {
+    font-family: 'Pretendard-Regular';
+    a{text-decoration: none; color: white;}
+    background-color: black;
+    color: white;
+}
+
+.frontend {
+    .frontend_inner {
+        width: 1460px;
+        margin: auto;
+
+        .header{
+            padding: 355px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                color: #B1E5FF;
+                font-size: 50px;
+            }
+            h1{font-size: 150px;}
+        }
+
+        .sidebar{
+            position: fixed;   // 고정 위치
+            top: 50%;          // 화면 세로 가운데 기준 (원하면 조정)
+            right: 0;          // 오른쪽 끝에 붙이기
+            transform: translateY(-50%); // 세로 중앙 정렬
+            width: 80px;       // 너비 (원하는 대로)
+            color: #fff;
+            padding: 20px 10px;
+            z-index: 1000;     // 다른 요소 위에 나오도록
+            ul{
+                list-style-type: none;
+                li:nth-child(1){margin-bottom: 30px;}
+                li:nth-child(2){margin-bottom: 30px;}
+                li a{font-family: 'LOTTERIADDAG'; width: 40px; height: 40px; border-radius: 50%; align-items: center; text-align: center; display: flex; justify-content: center; background-color: #fff; color: #000; font-size: 23px;}
+                li a:hover{background-color: #51c5ff;}
+            }
+        }
+        .profile{
+            h1{
+                color: #B1E5FF;
+                font-size: 64px;
+                margin-bottom: 85px;
+            }
+            .profile_inner{
+                display: flex; justify-content: space-between;
+                .profile_left{
+                    .profile_left_name{
+                        margin-bottom: 47px;
+                        h2{
+                            font-size: 40px;
+                            span{font-size: 24px;}
+                        }
+                    }
+                    img{margin-bottom: 20px;}
+                    p{
+                        font-size: 24px;
+                        i{font-size: 18px; margin-right: 10px;}
+                    }
+                    button{margin-top: 10px; width: 185px; height: 37px; font-size: 20px; border-radius: 5px; border: none; cursor: pointer;}
+                }
+                .profile_middle{
+                    margin-top: 97px;
+                    width: 500px;
+                    h5{font-size: 26px; margin-bottom: 25px;}
+                    p{font-size: 22px;}
+                    .profile_middle_education{
+                        margin-bottom: 70px;
+                        p:nth-of-type(1){margin-bottom: 15px;}
+                    }
+                    .profile_middle_experience{
+                        margin-bottom: 70px;}
+                        p:nth-of-type(1){margin-bottom: 15px;}
+                    .profile_middle_About{}
+                }
+                .profile_right{
+                    margin-top: 95px;
+                    >p{font-size: 26px; margin-bottom: 50px; font-weight: bold;}
+                    .profile_right_container{
+                        width: 300px;  margin: auto;
+                    }
+                    .profile_right_one{
+                        img{cursor: pointer;}
+                        img:hover{transform: scale(1.2);}
+                        display: flex; 
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+                    }
+                    .profile_right_two{
+                        img{cursor: pointer;}
+                        img:hover{transform: scale(1.2);}
+                        display: flex; 
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+                    }
+                    .profile_right_three{
+                        img{cursor: pointer;}
+                        img:hover{transform: scale(1.2);}
+                        display: flex; 
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+                    }
+                    .profile_right_four{
+                        img{cursor: pointer;}
+                        img:hover{transform: scale(1.2);}
+                        display: flex; 
+                        justify-content: space-between;
+                    }
+                }
+                .profile-right-wrapper {
+                    position: relative; /* 기준 부모 역할 */
+                }
+                
+                #profile-modal {
+                    color: black;
+                    display: none;
+                    position: absolute;
+                    width: 300px;
+                    height: 373px;
+                    background: rgba(255, 255, 255, 0.85);
+                    border-radius: 10px;
+                    padding: 50px 50px;
+                    left: 0px;
+                    margin-bottom: 10px;
+                    z-index: 9999;
+
+                    .profile-modal-content{
+                        .profile-close-btn{position: absolute; right: 25px; top: 25px; font-size: 25px; cursor: pointer;}
+                        #profile-modal-info>h3{font-size: 25px;}
+                        #profile-modal-info>p{font-size: 20px; text-align: left; margin-top: 15px;}
+                    }
+                }
+                
+                
+            }
+        }
+        .project{
+            margin-top: 308px;
+            h1{
+                color: #B1E5FF;
+                font-size: 64px;
+                margin-bottom: 85px;
+            }
+            .project_inner{
+                .project_top{
+                    display: flex; justify-content: space-between; margin-bottom: 110px;
+                    .project_top_one, .project_top_two, .project_top_three{
+                        width: 450px;
+                        h4{font-size: 32px; border-bottom: 2px solid #fff; margin-bottom: 30px;}
+                        img{margin-bottom: 20px;}
+                        .project_top_one_text, .project_top_two_text, .project_top_three_text{
+                            display: flex; width: 450px;
+                            .project_top_one_title, .project_top_two_title, .project_top_three_title{
+                                margin-right: 20px;
+                                h5{font-size: 20px; font-weight: bold; margin-bottom: 15px;}
+                            }
+                            .project_top_one_explanation, .project_top_two_explanation, .project_top_three_explanation{
+                                p{font-size: 20px; margin-bottom: 15px;}
+                            }
+                        }
+                        .project_top_one_link, .project_top_two_link, .project_top_three_link{
+                            display: flex; width: 450px; justify-content: space-between;
+                            .project_top_one_web, .project_top_two_web, .project_top_three_web{
+                                a:nth-of-type(1){background-color: #B1E5FF;}
+                                a{display: inline-block; width: 110px; height: 30px; color: black; font-size: 20px; font-weight: 600; text-align: center; line-height: 30px; background-color: #fff; border-radius: 5px;}
+                                a:hover{background-color: #6acdff;}
+                                a:active{background-color: #00aaff;}
+                            }
+                            .project_top_one_logo, .project_top_two_logo, .project_top_three_logo{
+                                img{margin-left: 10px;}
+                            }
+                        }
+                    }
+                }
+                .project_bottom{
+                    display: flex; justify-content: space-between; margin-bottom: 110px;
+                    .project_bottom_one, .project_bottom_two, .project_bottom_three{
+                        width: 450px;
+                        h4{font-size: 32px; border-bottom: 2px solid #fff; margin-bottom: 30px;}
+                        img{margin-bottom: 20px;}
+                        .project_bottom_one_text, .project_bottom_two_text, .project_bottom_three_text{
+                            display: flex; width: 450px;
+                            .project_bottom_one_title, .project_bottom_two_title, .project_bottom_three_title{
+                                margin-right: 20px;
+                                h5{font-size: 20px; font-weight: bold; margin-bottom: 15px;}
+                            }
+                            .project_bottom_one_explanation, .project_bottom_two_explanation, .project_bottom_three_explanation{
+                                p{font-size: 20px; margin-bottom: 15px;}
+                            }
+                        }
+                        .project_bottom_one_link, .project_bottom_two_link, .project_bottom_three_link{
+                            display: flex; width: 450px; justify-content: space-between;
+                            .project_bottom_one_web, .project_bottom_two_web, .project_bottom_three_web{
+                                a:nth-of-type(1){background-color: #B1E5FF;}
+                                a{display: inline-block; width: 110px; height: 30px; color: black; font-size: 20px; font-weight: 600; text-align: center; line-height: 30px; background-color: #fff; border-radius: 5px;}
+                                a:hover{background-color: #B1E5FF;}
+                                a:active{background-color: #51c5ff;}
+                            }
+                            .project_bottom_one_logo, .project_bottom_two_logo, .project_bottom_three_logo{
+                                img{margin-left: 10px;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dkdkdk{ 
+        a{
+            i{
+                position: relative; left: 1835px; bottom: 40px;
+                width: 40px; height: 40px;
+                font-size: 25px;
+                text-align: center; display: flex; justify-content: center;
+                flex-direction: column;
+                border-radius: 50%;
+                background-color: #fff;
+                color: black;
+            }
+        }
+    }
+    footer{
+        height: 67px; text-align: center; display: flex; flex-direction: column; justify-content: center; background-color: white; color: black; font-size: 15px;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 500px) {
+
+    .frontend {
+        .frontend_inner {
+            width: 100%;
+            margin: auto;
+    
+            .header{
+                h4{
+                    font-size: 35px;
+                    font-weight: normal;
+                }
+                h1{font-size: 100px;}
+            }
+    
+            .sidebar{display: none;}
+            .profile{
+                h1{
+                    margin-bottom: 30px;
+                    text-align: center;
+                    font-size: 40px;
+                }
+                .profile_inner{
+                    flex-direction: column;
+                    .profile_left{
+                        margin: auto;
+                        .profile_left_name{
+                            h2{
+                                display: none;
+                            }
+                        }
+                    }
+                    .profile_middle{
+                        margin: 97px auto 0 auto;
+                        width: 300px;
+                        p{font-size: 15px;}
+                        .profile_middle_education{}
+                        .profile_middle_experience{}
+                        .profile_middle_About{}
+                    }
+                    .profile_right{
+                        p{text-align: center;}
+                        .profile_right_container{}
+                        .profile_right_one{}
+                        .profile_right_two{}
+                        .profile_right_three{}
+                        .profile_right_four{}
+                    }
+                    .profile-right-wrapper {}
+                    
+                    #profile-modal {
+                        left: 93px;    
+                        .profile-modal-content{
+                            .profile-close-btn{}
+                        }
+                    }
+                }
+            }
+            .project{
+                h1{
+                    text-align: center;
+                    font-size: 40px;
+                    margin-bottom: 80px;
+                }
+                .project_inner{
+                    .project_top{
+                        margin-bottom: 0;
+                        flex-direction: column; align-items: center;
+                        .project_top_one, .project_top_two, .project_top_three{
+                            margin-bottom: 70px;
+                        }
+                    }
+                    .project_bottom{
+                        margin-bottom: 0;
+                        flex-direction: column; align-items: center;
+                        .project_bottom_one, .project_bottom_two, .project_bottom_three{
+                            margin-bottom: 70px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            height: 67px; text-align: center; display: flex; flex-direction: column; justify-content: center; background-color: white; color: black; font-size: 15px;
+        }
+    }
+    
+    
+}
