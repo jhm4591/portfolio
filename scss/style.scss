@@ -30,9 +30,11 @@ body {
         margin: auto;
 
         .header{
-            padding: 355px 0;
+            // height: 945px;
+            height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             h4{
                 color: #B1E5FF;
@@ -42,22 +44,32 @@ body {
         }
 
         .sidebar{
-            position: fixed;   // 고정 위치
-            top: 50%;          // 화면 세로 가운데 기준 (원하면 조정)
-            right: 0;          // 오른쪽 끝에 붙이기
-            transform: translateY(-50%); // 세로 중앙 정렬
-            width: 80px;       // 너비 (원하는 대로)
+            position: fixed;   
+            top: 50%;          
+            right: 0;          
+            transform: translateY(-50%); 
+            width: 80px;       
             color: #fff;
             padding: 20px 10px;
-            z-index: 1000;     // 다른 요소 위에 나오도록
+            z-index: 1000;
             ul{
                 list-style-type: none;
                 li:nth-child(1){margin-bottom: 30px;}
                 li:nth-child(2){margin-bottom: 30px;}
                 li a{font-family: 'LOTTERIADDAG'; width: 40px; height: 40px; border-radius: 50%; align-items: center; text-align: center; display: flex; justify-content: center; background-color: #fff; color: #000; font-size: 23px;}
-                li a:hover{background-color: #51c5ff;}
+                li a:hover{background-color: #B1E5FF;}
             }
         }
+
+        .sidebar-btn.active {
+            background-color: #51c5ff;
+            color: black;
+        }
+
+        #header{}
+        #profile{}
+        #project{}
+
         .profile{
             h1{
                 color: #B1E5FF;
@@ -173,10 +185,12 @@ body {
                         .project_top_one_text, .project_top_two_text, .project_top_three_text{
                             display: flex; width: 450px;
                             .project_top_one_title, .project_top_two_title, .project_top_three_title{
+                                width: 90px;
                                 margin-right: 20px;
                                 h5{font-size: 20px; font-weight: bold; margin-bottom: 15px;}
                             }
                             .project_top_one_explanation, .project_top_two_explanation, .project_top_three_explanation{
+                                width: 360px;
                                 p{font-size: 20px; margin-bottom: 15px;}
                             }
                         }
@@ -207,6 +221,7 @@ body {
                                 h5{font-size: 20px; font-weight: bold; margin-bottom: 15px;}
                             }
                             .project_bottom_one_explanation, .project_bottom_two_explanation, .project_bottom_three_explanation{
+                                width: 360px;
                                 p{font-size: 20px; margin-bottom: 15px;}
                             }
                         }
@@ -218,6 +233,18 @@ body {
                                 a:hover{background-color: #B1E5FF;}
                                 a:active{background-color: #51c5ff;}
                             }
+                            .project_bottom_two_web{
+                                a:nth-of-type(1){background-color: gray;}
+                                a{background-color: gray; cursor: no-drop;}
+                                a:hover{background-color: gray;}
+                                a:active{background-color: gray;}
+                            }
+                            .project_bottom_three_web{
+                                a:nth-of-type(1){background-color: gray;}
+                                a{background-color: gray; cursor: no-drop;}
+                                a:hover{background-color: gray;}
+                                a:active{background-color: gray;}
+                            }
                             .project_bottom_one_logo, .project_bottom_two_logo, .project_bottom_three_logo{
                                 img{margin-left: 10px;}
                             }
@@ -227,10 +254,10 @@ body {
             }
         }
     }
-    .dkdkdk{ 
+    .top{ position: relative;
         a{
             i{
-                position: relative; left: 1835px; bottom: 40px;
+                position: absolute; left: 1835px; bottom: 40px;
                 width: 40px; height: 40px;
                 font-size: 25px;
                 text-align: center; display: flex; justify-content: center;
@@ -239,10 +266,13 @@ body {
                 background-color: #fff;
                 color: black;
             }
+            i:hover{background-color: #B1E5FF;}
+            i:active{background-color: #51c5ff;}
         }
     }
     footer{
         height: 67px; text-align: center; display: flex; flex-direction: column; justify-content: center; background-color: white; color: black; font-size: 15px;
+        P{font-weight: lighter;}
     }
 }
 
