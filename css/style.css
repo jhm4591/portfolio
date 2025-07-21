@@ -129,6 +129,8 @@ body a {
 }
 .frontend .frontend_inner .profile .profile_inner .profile_left img {
   margin-bottom: 20px;
+  width: 326px;
+  height: 387px;
 }
 .frontend .frontend_inner .profile .profile_inner .profile_left p {
   font-size: 24px;
