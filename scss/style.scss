@@ -86,12 +86,12 @@ body {
                             span{font-size: 24px;}
                         }
                     }
-                    img{margin-bottom: 20px; width: 326px; height: 387px;}
+                    img{margin-bottom: 20px; width: 326px;/*  height: 387px; */}
                     p{
                         font-size: 24px;
                         i{font-size: 18px; margin-right: 10px;}
                     }
-                    button{margin-top: 10px; width: 185px; height: 37px; font-size: 20px; border-radius: 5px; border: none; cursor: pointer;}
+                    button{margin-top: 10px; width: 185px; height: 37px; font-size: 20px; border-radius: 5px; border: none; cursor: pointer; font-weight: 600;}
                 }
                 .profile_middle{
                     margin-top: 97px;
@@ -105,11 +105,14 @@ body {
                     .profile_middle_experience{
                         margin-bottom: 70px;}
                         p:nth-of-type(1){margin-bottom: 15px;}
-                    .profile_middle_About{}
+                    .profile_middle_About{
+                        p:nth-of-type(1){margin-bottom: 15px;}
+                        p:nth-of-type(2){margin-bottom: 15px;}
+                    }
                 }
                 .profile_right{
                     margin-top: 95px;
-                    >p{font-size: 26px; margin-bottom: 50px; font-weight: bold;}
+                    p{font-size: 26px; margin-bottom: 50px; font-weight: bold;}
                     .profile_right_container{
                         width: 300px;  margin: auto;
                     }
@@ -160,8 +163,8 @@ body {
 
                     .profile-modal-content{
                         .profile-close-btn{position: absolute; right: 25px; top: 25px; font-size: 25px; cursor: pointer;}
-                        #profile-modal-info>h3{font-size: 25px;}
-                        #profile-modal-info>p{font-size: 20px; text-align: left; margin-top: 15px;}
+                        #profile-modal-info>h3{font-size: 35px;}
+                        #profile-modal-info>p{font-size: 20px; text-align: left; margin-top: 15px; font-weight: lighter;}
                     }
                 }
                 

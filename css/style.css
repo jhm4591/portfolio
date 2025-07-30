@@ -129,8 +129,7 @@ body a {
 }
 .frontend .frontend_inner .profile .profile_inner .profile_left img {
   margin-bottom: 20px;
-  width: 326px;
-  height: 387px;
+  width: 326px; /*  height: 387px; */
 }
 .frontend .frontend_inner .profile .profile_inner .profile_left p {
   font-size: 24px;
@@ -147,6 +146,7 @@ body a {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  font-weight: 600;
 }
 .frontend .frontend_inner .profile .profile_inner .profile_middle {
   margin-top: 97px;
@@ -171,10 +171,16 @@ body a {
 .frontend .frontend_inner .profile .profile_inner .profile_middle p:nth-of-type(1) {
   margin-bottom: 15px;
 }
+.frontend .frontend_inner .profile .profile_inner .profile_middle .profile_middle_About p:nth-of-type(1) {
+  margin-bottom: 15px;
+}
+.frontend .frontend_inner .profile .profile_inner .profile_middle .profile_middle_About p:nth-of-type(2) {
+  margin-bottom: 15px;
+}
 .frontend .frontend_inner .profile .profile_inner .profile_right {
   margin-top: 95px;
 }
-.frontend .frontend_inner .profile .profile_inner .profile_right > p {
+.frontend .frontend_inner .profile .profile_inner .profile_right p {
   font-size: 26px;
   margin-bottom: 50px;
   font-weight: bold;
@@ -270,12 +276,13 @@ body a {
   cursor: pointer;
 }
 .frontend .frontend_inner .profile .profile_inner #profile-modal .profile-modal-content #profile-modal-info > h3 {
-  font-size: 25px;
+  font-size: 35px;
 }
 .frontend .frontend_inner .profile .profile_inner #profile-modal .profile-modal-content #profile-modal-info > p {
   font-size: 20px;
   text-align: left;
   margin-top: 15px;
+  font-weight: lighter;
 }
 .frontend .frontend_inner .project {
   margin-top: 308px;
